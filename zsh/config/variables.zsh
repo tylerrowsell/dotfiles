@@ -6,7 +6,7 @@ export TZ="Canada/Eastern"
 
 # Oh My ZSH
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="robbyrussell"
+export ZSH_THEME="af-magic"
 
 # Utilities
 export EDITOR='vim'
