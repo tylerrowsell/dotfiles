@@ -8,6 +8,3 @@
     co = "checkout"
     cp = "cherry-pick"
     pushf = "push --force-with-lease"
-[credential]
-	helper = 
-	helper = store --file /opt/dev/var/private/git_credential_store

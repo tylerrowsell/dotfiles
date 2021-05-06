@@ -1,11 +1,14 @@
 # Local functions
 # --------------------------------------
 spinup() {
-    if [ -n "$1" ]
+    if [ -n "$1" ] && [ -n "$2" ]
     then
-        spin create online-store-web --name "$1"
+        spin create "$1" --name "$2" 
+    elif [ -n "$1" ]
+    then
+        spin create shopify --name "$1"
     else
-        spin create online-store-web
+        spin create shopify
     fi
 }
 
