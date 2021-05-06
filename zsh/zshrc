@@ -8,3 +8,4 @@ source $HOME/.zsh/config/functions.zsh
 
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh

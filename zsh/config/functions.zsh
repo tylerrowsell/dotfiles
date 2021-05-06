@@ -9,7 +9,7 @@ spinup() {
     fi
 }
 
-boop() {
+push() {
     git add .
     if [ -n "$1" ]
     then
@@ -17,5 +17,11 @@ boop() {
     else
         git commit -m "boop"
     fi
+    git pushf
+}
+
+amend() {
+    git add .
+    git commit --amend
     git pushf
 }
