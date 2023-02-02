@@ -3,12 +3,12 @@
 spinup() {
     if [ -n "$1" ] && [ -n "$2" ]
     then
-        spin up "$1" --name "$2" 
+        spin up "$1" --name "$2"
     elif [ -n "$1" ]
     then
-        spin up threed-model-service --name "$1"
+        spin up online-store-web --name "$1"
     else
-        spin up threed-model-service
+        spin up online-store-web
     fi
 }
 

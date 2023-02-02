@@ -21,3 +21,8 @@ export LC_ALL=$LANG
 export PATH="$HOME/.zsh/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+
+# Buildkite
+if [ "$SPIN" ]; then
+export BUILDKITE_TOKEN="$(cat /etc/spin/secrets/buildkite)"
+fi
