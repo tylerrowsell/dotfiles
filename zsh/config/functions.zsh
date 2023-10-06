@@ -6,9 +6,9 @@ spinup() {
         spin up "$1" --name "$2"
     elif [ -n "$1" ]
     then
-        spin up online-store-web --name "$1"
+        spin up shopify --name "$1"
     else
-        spin up online-store-web
+        spin up shopify
     fi
 }
 

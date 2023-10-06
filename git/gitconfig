@@ -8,6 +8,8 @@
     co = "checkout"
     cp = "cherry-pick"
     pushf = "push --force-with-lease"
+    rs = "reset --soft HEAD~1"
+    ri = "!f() { git rebase -i HEAD~\"$1\"; }; f"
 [init]
 	defaultBranch = main
 [filter "lfs"]

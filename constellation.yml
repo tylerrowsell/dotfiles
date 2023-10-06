@@ -1,5 +1,5 @@
 schema: v1
-extend: online-store-web
+extend: shopify
 description: Describe this constellation
 repos:
-  - video
+  - deep-knowledge-graph
