@@ -16,3 +16,8 @@ if [ -e /Users/tylerrowsell/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/t
 [[ -x /usr/local/bin/brew ]] && eval $(/usr/local/bin/brew shellenv)
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+
+# cloudplatform: add Shopify clusters to your local kubernetes config
+export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/tylerrowsell/.kube/config:/Users/tylerrowsell/.kube/config.shopify.cloudplatform
+for file in /Users/tylerrowsell/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
+kubectl-short-aliases
